@@ -46,17 +46,17 @@ Este repositório contém uma análise detalhada de risco de crédito, explorand
 ## 📊 Dados
 
 ### Dataset: `credit_risk_dataset.csv`
-O conjunto de dados contém informações sobre clientes e suas características de crédito:
+O conjunto de dados está disponível em `data/raw/credit_risk_dataset.csv` e contém informações sobre clientes e suas características de crédito com **~32.600 registros** e **11 variáveis**.
 
 **Variáveis principais analisadas:**
-- `SeriousDlqin2yrs` / `Target`: Indicador de inadimplência (variável alvo)
+- `SeriousDlqin2yrs` / `Target`: Indicador de inadimplência (variável alvo - sim/não)
 - `person_age`: Idade do cliente
-- `person_emp_length`: Tempo de emprego
-- `person_income`: Renda do cliente
+- `person_emp_length`: Tempo de emprego (em anos)
+- `person_income`: Renda anual do cliente
 - `person_home_ownership`: Tipo de propriedade residencial
-- `person_loan_amount`: Valor do empréstimo
-- `loan_int_rate`: Taxa de juros do empréstimo
-- `loan_percent_income`: Taxa de juros como percentual da renda
+- `person_loan_amount`: Valor total do empréstimo
+- `loan_int_rate`: Taxa de juros do empréstimo (%)
+- `loan_percent_income`: Taxa de juros como percentual da renda anual
 - `loan_status`: Status do empréstimo
 - `loan_intent`: Propósito do empréstimo
 
@@ -66,6 +66,9 @@ O notebook realiza limpeza e transformação dos dados, incluindo:
 - Análise de cardinalidade das variáveis
 - Identificação de variáveis numéricas e categóricas
 - Preparação para análises estatísticas
+
+**Acesso aos dados:**
+O arquivo CSV está versionado neste repositório e pronto para uso. Execute o notebook para carregar e processar os dados automaticamente.
 
 ## 📈 Análises Realizadas
 
